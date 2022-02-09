@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import math
 
 browser = webdriver.Chrome()
 
@@ -13,6 +14,9 @@ def close_browser():
 
 def time_to_copy_result():
     time.sleep(5)
+
+def calc(x):
+  return str(math.log(abs(12*math.sin(int(x)))))
 
 class SendKeys:
     """Class for sending keys depending of the element type"""
@@ -51,4 +55,13 @@ class Click:
     def by_xpath(el_name):
         button = browser.find_element(By.XPATH, el_name)
         button.click()
+
+    def by_ID(el_name):
+        button = browser.find_element(By.ID, el_name)
+        button.click()
+
+    def by_class_name(el_name):
+        button = browser.find_element(By.CLASS_NAME, el_name)
+        button.click()
+
 
