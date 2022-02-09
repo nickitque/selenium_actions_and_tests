@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import time
 
 browser = webdriver.Chrome()
 
@@ -7,6 +8,11 @@ browser = webdriver.Chrome()
 def open_url(url):
     browser.get(url)
 
+def close_browser():
+    browser.quit()
+
+def time_to_copy_result():
+    time.sleep(5)
 
 class SendKeys:
     """Class for sending keys depending of the element type"""
@@ -38,5 +44,3 @@ class Click:
         button = browser.find_element(By.CSS_SELECTOR, el_name)
         button.click()
 
-def close_browser():
-    browser.quit()

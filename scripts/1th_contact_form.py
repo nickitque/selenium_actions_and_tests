@@ -1,7 +1,6 @@
 """Automated script for filling the required data:
 Name, Surname, City and Country. Sending it."""
 
-
 from framework_for_stepic_tasks.methods_selenium import *
 
 
@@ -15,5 +14,6 @@ SendKeys.by_class_name("form-control.city", "Smolensk")
 SendKeys.by_id("country", "Russia")
 
 """Button click and browser closing"""
-SendKeys.by_css_selector("button.btn")
+Click.by_css_selector("button.btn")
+time_to_copy_result()
 close_browser()
