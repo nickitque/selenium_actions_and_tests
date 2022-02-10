@@ -1,6 +1,7 @@
 from framework_for_stepic_tasks.methods_selenium import *
 from selenium.webdriver.support.ui import Select
 
+
 """Url open."""
 open_url("http://suninjuly.github.io/selects1.html")
 
