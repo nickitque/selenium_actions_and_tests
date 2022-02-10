@@ -5,21 +5,25 @@ import math
 
 browser = webdriver.Chrome()
 
-
+"""Get Method."""
 def open_url(url):
     browser.get(url)
 
+"""Closing browser after needed operations."""
 def close_browser():
     browser.quit()
 
+"""Method that is usually used before close browser method
+to visual check the results of script executing"""
 def time_to_copy_result():
     time.sleep(5)
 
+"""Math formula needed for tasks starting from script #7."""
 def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
 class SendKeys:
-    """Class for sending keys depending of the element type"""
+    """Class for sending keys depending of the element type."""
     def by_name(el_name, key):
         element = browser.find_element(By.NAME, el_name)
         element.send_keys(key)
@@ -43,7 +47,7 @@ class SendKeys:
 
 
 class Click:
-    """Class for clicking buttons depending of the element type"""
+    """Class for clicking buttons depending of the element type."""
     def by_link_text(el_name):
         button = browser.find_element(By.LINK_TEXT, el_name)
         button.click()

@@ -3,7 +3,7 @@ from framework_for_stepic_tasks.methods_selenium import *
 """Url open."""
 open_url("http://suninjuly.github.io/get_attribute.html")
 
-"""Get Imagage attribute value to put it into Math function."""
+"""Get Image attribute value to put it into Math function."""
 x_element = browser.find_element(By.ID, "treasure")
 attribute = x_element.get_attribute("valuex")
 answer = calc(attribute)
