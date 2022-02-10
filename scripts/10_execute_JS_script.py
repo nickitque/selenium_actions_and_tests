@@ -1,5 +1,6 @@
 from framework_for_stepic_tasks.methods_selenium import *
 
+
 """Url open."""
 open_url("http://suninjuly.github.io/execute_script.html")
 
