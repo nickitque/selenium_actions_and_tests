@@ -9,7 +9,7 @@ Then send the result to field answer."""
 x_element = browser.find_element(By.ID, "input_value")
 SendKeys.by_id("answer", calc(x_element.text))
 
-"""Scroll the page to become checkbox visible, click checkbox."""
+"""Scroll the page to become checkbox visible then click checkbox."""
 button = browser.find_element(By.ID, "robotCheckbox")
 browser.execute_script("return arguments[0].scrollIntoView(true);", button)
 button.click()
