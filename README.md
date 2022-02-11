@@ -12,4 +12,8 @@
 <li><a href="http://suninjuly.github.io/math.html">http://suninjuly.github.io/math.html</a></li>
 <li><a href="http://suninjuly.github.io/get_attribute.html">http://suninjuly.github.io/get_attribute.html</a></li>
 <li>http://suninjuly.github.io/selects1.html</li>
+<li>http://suninjuly.github.io/execute_script.html</li>
+<li>http://suninjuly.github.io/file_input.html</li>
+<li>http://suninjuly.github.io/alert_accept.html</li>
+<li>http://suninjuly.github.io/redirect_accept.html</li>
 </ol>
