@@ -8,10 +8,10 @@ x_element = browser.find_element(By.ID, "input_value")
 x = x_element.text
 y = calc(x)
 
+"""Send keys, submit result, wait 5secs and close browser."""
 SendKeys.by_id("answer", y)
 Click.by_ID("robotCheckbox")
 Click.by_ID("robotsRule")
 Click.by_class_name("btn.btn-default")
-
 time_to_copy_result()
 close_browser()
