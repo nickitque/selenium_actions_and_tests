@@ -5,22 +5,27 @@ import math
 
 browser = webdriver.Chrome()
 
-"""Get Method."""
+
 def open_url(url):
+    """Get Method."""
     browser.get(url)
 
-"""Closing browser after needed operations."""
+
 def close_browser():
+    """Closing browser after needed operations."""
     browser.quit()
 
-"""Method that is usually used before close browser method
-to visual check the results of script executing"""
+
 def time_to_copy_result():
+    """Method that is usually used before close browser method
+    to visual check the results of script executing"""
     time.sleep(5)
 
-"""Math formula needed for tasks starting from script #7."""
+
 def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+    """Math formula needed for tasks starting from script #7."""
+    return str(math.log(abs(12*math.sin(int(x)))))
+
 
 class SendKeys:
     """Class for sending keys depending of the element type."""
