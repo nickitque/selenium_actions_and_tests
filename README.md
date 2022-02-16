@@ -1,10 +1,11 @@
-# selenium-test
+<h3>Welcome Here</h3>
 <p><em>This repo is used to show some methods in automating routine tasks or test some UI things that usually required for QA.</em></p>
-<p>So the folder "<strong>Scripts</strong>" contains scripts with automated Selenium actions. Some of them are unreal to perform by yourself, not by the script.</p>
-<p>The folder "<strong>Tests</strong>" contains random tests, including google.com, rabota.by etc.</p>
-<p>The folder "<strong>Fixtures</strong>" - now contains just a demo fixture.</p>
-<p>The folder "<strong>Framework_for_stepic_tasks</strong>" contains classes, methods, modules used for all the actions above. It was created to make writing tests easier for me.</p>
-<h3>Pages used in the scripts</h3>
+<ul>
+<li>So the folder "<strong>Scripts</strong>" contains scripts with automated Selenium actions. Some of them are unreal to perform by yourself, not by the script.</li>
+<li>The folder "<strong>Tests</strong>" contains random tests, including google.com, rabota.by etc.</li>
+<li>The folder "<strong>Fixtures</strong>" - now contains just a demo fixture.</li>
+<li>The folder "<strong>Framework_for_stepic_tasks</strong>" contains classes, methods, modules used for all the actions above. It was created to make writing tests easier for me.</li>
+</ul><h3>Pages used in the scripts</h3>
 <p>The list of pages you can see here:</p>
 <ol>
 <li><a href="http://suninjuly.github.io/simple_form_find_task.html">http://suninjuly.github.io/simple_form_find_task.html</a></li>
