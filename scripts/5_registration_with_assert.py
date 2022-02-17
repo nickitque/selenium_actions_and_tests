@@ -1,12 +1,12 @@
 from framework_for_stepic_tasks.methods_selenium import *
 
 """Url open."""
-open_url("http://suninjuly.github.io/registration1.html")
+open_url("http://suninjuly.github.io/registration2.html")
 
 """Sending keys to required fields."""
-SendKeys.by_class_name("form-control.first", "Nikita")
-SendKeys.by_class_name("form-control.second", "Radzisheuski")
-SendKeys.by_class_name("form-control.third", "JustEmailForRegistration@mail.com")
+SendKeys.by_xpath("/html/body/div/form/div[1]/div[1]/input", "Nikita")
+SendKeys.by_xpath("/html/body/div/form/div[1]/div[2]/input", "Radzisheuski")
+SendKeys.by_xpath("/html/body/div/form/div[1]/div[3]/input", "JustEmailForRegistration@mail.com")
 time_to_copy_result()
 
 """Sending filled form."""
