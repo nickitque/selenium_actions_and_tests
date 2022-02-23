@@ -18,6 +18,7 @@ def test_rabota_by_location():
     """This test checks if there string Минск in location notification."""
     open_url("https://rabota.by/")
     location_notif = (browser.find_element(By.CLASS_NAME, "HH-Supernova-RegionClarification-Content")).text
+    assert "Работа в Минске, свежие вакансии - rabota.by" == browser.title
     assert "Минск" in location_notif
     close_browser()
 
