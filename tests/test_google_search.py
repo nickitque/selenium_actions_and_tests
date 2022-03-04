@@ -16,6 +16,6 @@ def test_google_search_num_2():
     driver = webdriver.Chrome()
     driver.get("https://google.com")
     search_input = driver.find_element(By.CLASS_NAME, "gLFyf.gsfi")
-    search_input.send_keys("QA Automation Engineer #2\n")
+    search_input.send_keys("QA Automation Engineer\n")
     time.sleep(5)
     driver.close()
