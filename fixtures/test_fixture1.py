@@ -1,7 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import pytest
 
 link = "http://selenium1py.pythonanywhere.com/"
+
+
+@pytest.fixture
+def browser_chrome():
+    print("\nstart browser for test..")
+    browser_chrome = webdriver.Chrome()
+    yield browser_chrome
+    # этот код выполнится после завершения теста
+    print("\nquit browser..")
+    browser_chrome.quit()
 
 
 class TestMainPage1():
