@@ -9,7 +9,7 @@ def test_google_search():
     time_to_copy_result()
     search_field = browser.find_element(By.XPATH, "/html/body/div[4]/div[2]/form/div[1]/div[1]/div[2]/div/div[2]/input")
     attribute = search_field.get_attribute("value")
-    #print(attribute)
+    assert "QA Automation Engineer" in browser.title
     assert attribute == "QA Automation Engineer"
     close_browser()
 
