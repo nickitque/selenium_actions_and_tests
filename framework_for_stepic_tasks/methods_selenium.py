@@ -29,6 +29,10 @@ def calc(x):
 
 class SendKeys:
     """Class for sending keys depending of the element type."""
+    # def by_locator(locator, key):
+    #     element = browser.find_element(locator)
+    #     element.send_keys(key)
+
     def by_name(el_name, key):
         element = browser.find_element(By.NAME, el_name)
         element.send_keys(key)
