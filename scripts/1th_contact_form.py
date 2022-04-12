@@ -3,7 +3,6 @@ Name, Surname, City and Country. Sending it."""
 
 from framework_for_stepic_tasks.methods_selenium import *
 
-
 """Url Open."""
 open_url("http://suninjuly.github.io/simple_form_find_task.html")
 

@@ -3,7 +3,7 @@ from framework_for_stepic_tasks.methods_selenium import *
 """Url open."""
 open_url("http://suninjuly.github.io/math.html")
 
-"""Taking value of x by it's id. And putting the value to math formula"""
+"""Taking value of x by it's id. And putting the value to math formula."""
 x_element = browser.find_element(By.ID, "input_value")
 x = x_element.text
 y = calc(x)

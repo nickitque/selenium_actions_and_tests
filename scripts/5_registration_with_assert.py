@@ -18,7 +18,6 @@ welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
 """Write to variable welcome_text text from element welcome_text_elt"""
 welcome_text = welcome_text_elt.text
 
-
 """With help of assert we check that expected text is similar to actual text."""
 assert "Congratulations! You have successfully registered!" == welcome_text
 time_to_copy_result()

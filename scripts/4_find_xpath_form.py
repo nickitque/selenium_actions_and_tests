@@ -3,7 +3,7 @@ from framework_for_stepic_tasks.methods_selenium import *
 """Url open."""
 open_url("http://suninjuly.github.io/find_xpath_form")
 
-"""Sending keys."""
+"""Sending keys to fields."""
 SendKeys.by_name("first_name", "Ivan")
 SendKeys.by_name("last_name", "Sidorov")
 SendKeys.by_class_name("form-control.city", "Minsk")
