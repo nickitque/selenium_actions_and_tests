@@ -10,9 +10,10 @@ def open_url(url):
     """Get Method."""
     browser.get(url)
 
-def print_title(title):
-    """Print page title."""
+def print_title_and_url():
+    """Print page title and current url."""
     print(browser.title)
+    print(browser.current_url)
 
 
 def close_browser():
